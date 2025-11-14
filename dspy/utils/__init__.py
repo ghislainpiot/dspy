@@ -8,6 +8,7 @@ from dspy.utils.annotation import experimental
 from dspy.utils.callback import BaseCallback, with_callbacks
 from dspy.utils.dummies import DummyLM, DummyVectorizer, dummy_rm
 from dspy.utils.inspect_history import pretty_print_history
+from dspy.utils.replay_cache import CacheMissError, ReplayCache
 from dspy.utils.syncify import syncify
 
 
@@ -35,4 +36,6 @@ __all__ = [
     "StatusMessage",
     "StatusMessageProvider",
     "pretty_print_history",
+    "ReplayCache",
+    "CacheMissError",
 ]
